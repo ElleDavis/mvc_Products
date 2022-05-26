@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <h1> <%= pageHeader %> </h1>
+    <a href="/"> Home</a>
+    <a href="/products/new"> Find new Products </a>
+    <a href="/products/id"> Find Products by ID</a>
+
+    <h2>Shop our Products</h2>
+    <ul>
+        <% data.map( (product, index) => { %>
+        <li>
+            <%= product.title %> is currently 
+            $<%= product.price %>
+
+        </li>
+        <% }) %>
+   </ul>
+    
+</body>
+</html>

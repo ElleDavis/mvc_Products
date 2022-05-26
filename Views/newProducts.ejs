@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+    <h1> <%= pageHeader %> </h1>
+    <a href="/"> Home </a>
+    <a href="/products"> Go Shop Our Products</a>
+    <a href="/products/id"> Find Products by ID</a>
+
+
+    <form action="/products" method="POST">
+        <input type="text" name="title" placeholder="title">
+        <label for="Product title"> </label>
+
+        <input type="number" name="price" placeholder="price">
+        <label for="Price"></label>
+
+        <label for="description" > </label>
+        <input type="text" name="description" placeholder="description">
+        
+        <input type="submit" value="Add Product">
+    </form>
+</body>
+</html>
